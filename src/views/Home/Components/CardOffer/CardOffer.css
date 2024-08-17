@@ -1,0 +1,66 @@
+.container__cardoffer {
+  width: 100%;
+  height: 100%;
+  max-width: 470px;
+  min-height: 100px;
+  color: #fff;
+  position: relative;
+  border-radius: 20px;
+  z-index: 100;
+  overflow: hidden;
+  transition: box-shadow .3s;
+  box-shadow: 1px 1px 0 #a9a9a940;
+}
+.cardoffer {
+    width: 100%;
+    height: 100%;
+    background-color: #5cabbe0d;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 0 #a9a9a940, inset 1px 1px 2px #5e5d5d3e ;
+    backdrop-filter: blur(50px);
+    z-index: 100;
+    display: flex;
+    gap: 17px;
+}
+.circle__card {
+  width: 70px;
+  height: 70px;
+  background-color: var(--bg_color);
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  border-radius: 50%;
+  z-index: -100;
+  transition: all .3s;
+}
+.container__cardoffer:hover .circle__card{
+    transform: translate(50px,40px) scale(5,1.4);
+    opacity: .3;
+}
+.container__cardoffer:hover{
+    box-shadow: 2px 2px #d6d6d740;
+}
+
+.img__offer{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    aspect-ratio: 1/1;
+}
+.cardoffer__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.cardoffer__title{
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #eee;
+}
+.cardoffer__description{
+    font-size: 0.9rem;
+    font-weight:lighter;
+    color: #ccc;
+}

@@ -1,0 +1,54 @@
+.footer__app{
+    width: 100%;
+    height: 100%;
+    max-width: 1700px;
+    padding: 0 5px;
+    min-height: 30vh;
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+    background-color:#05040C ;
+    overflow: hidden;
+}
+.footer__title__app{
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.location__section{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content:space-between;
+    gap: 10px;
+    padding: 100px ;
+background-size: 100% 100%;
+background-image: radial-gradient(closest-side, #30267298 0%, #05040C00 99%);
+}
+.map__fablab{
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.social__icons{
+    display: flex;
+    gap: 20px;
+}
+/* Mobile 320px - 480px */
+/* tablet 481px - 768px */
+/* laptop 769 - 1024px */
+/* desktop 1025px - 1200px */
+@media (width < 1024px ){
+    .location__section{
+        gap: 40px;
+        padding: 15px;
+    }
+}
+@media (width < 768px ){
+    .location__section{
+        flex-direction: column;
+        padding: 10px;
+        gap: 40px;
+    }
+}

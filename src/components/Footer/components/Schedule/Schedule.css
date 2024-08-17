@@ -1,0 +1,45 @@
+.container__schedule{
+    width: 100%;
+    max-width: 500px;
+}
+.title__schedule{
+    color: #F16EC1;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.description__schedule{
+    font-size: 1rem;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+.schedules> h4{
+    color: #F16EC1;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    
+}
+.schedules > .list__of__days{
+
+    list-style: none;
+    border-left: 1px solid #EF3DCF;
+    position: relative;
+}
+.list__of__days::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 0 8px 0px #EF3DCF;
+}
+.list__of__days > .day__item{
+    text-transform: uppercase;
+    padding: 13px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #27F3E766;
+}
