@@ -1,8 +1,11 @@
-import React from 'react'
+import "./About.css"
+import Slider from './components/Slider/Slider'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div className='container__about' >
+      <Slider/> 
+    </div>
   )
 }
 

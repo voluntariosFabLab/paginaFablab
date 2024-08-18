@@ -1,16 +1,25 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import logo from "./assets/logo.webp";
+import { useState } from "react";
 
 const Header = () => {
+  const [isClickedMenu, setIsClickedMenu] = useState(false);
   const location = useLocation();
 
   return (
     <header className="header">
       <section className="header__section">
-        <Link to="/" ><img src={logo} alt="logo" className="header__section__logo" /></Link>
+        <Link to="/">
+          <img src={logo} alt="logo" className="header__section__logo" />
+        </Link>
       </section>
-      <nav className="nav">
+      <span
+        onClick={() => setIsClickedMenu(!isClickedMenu)}
+        className={`mobile-btn ${isClickedMenu?"mobile-btn-active":""}`}
+        
+      ></span>
+      <nav className={`nav ${isClickedMenu?"nav__active":""}`}>
         <Link
           to="/"
           className={`nav__link ${
@@ -52,7 +61,7 @@ const Header = () => {
           Contacto
         </Link>
       </nav>
-      <section className="header_section"> </section>
+      <section className="header_section hide__section"> </section>
     </header>
   );
 };
