@@ -1,7 +1,7 @@
 .home__container {
   width: 100%;
   max-width:1600px;
-  min-height: 70vh;
+  /* min-height: 70vh; */
 }
 .offer__title{
     color: #fff;

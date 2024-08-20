@@ -1,0 +1,71 @@
+.container__card {
+    width: 100%;
+  width: 200px;
+  height: 100%;
+  max-height: 270px;
+  color: #dcdcdc;
+  background-color: #19181f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgb(96, 255, 255, 50%);
+  box-shadow: 5px 5px 60px rgba(151, 71, 255, 0.15);
+  position: relative;
+  padding: 20px 30px;
+  transition: all .3s;
+}
+.images__card {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.images__card > .user1,
+.user2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.images__card > .user2 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 50px);
+  opacity: 0;
+  transition: opacity .3s;
+}
+.name__user{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.rol__user{
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+.container__card:hover .user2 { 
+    opacity: 1;
+}
+.container__card:hover{ 
+  box-shadow: 5px 5px 60px rgba(151, 71, 255, 0.2);
+    border: 1px solid #74f6f6d5;
+}
+
+.links__user{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (width < 480px) { 
+    .container__card{
+        transform: scale(1);
+    }
+}

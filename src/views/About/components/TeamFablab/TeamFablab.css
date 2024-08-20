@@ -1,0 +1,51 @@
+.container__team__fablab{
+    width: 100%;
+}
+.container__cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px 0;
+}
+.title__section__cards{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.container__cards > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+@media (width < 1024px) { 
+    .container__cards > div{
+        gap: 50px;
+    }
+}
+@media (width < 768px) { 
+    .container__cards  > div{ 
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        place-items: center;
+        gap: 10px;
+
+    }
+}
+@media (width < 480px) { 
+    .container__cards  > div{ 
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        place-items: center;
+        gap: 10px;
+        
+    }
+}
+
+/* Mobile 320px - 480px */
+/* tablet 481px - 768px */
+/* laptop 769 - 1024px */
+/* desktop 1025px - 1200px */
