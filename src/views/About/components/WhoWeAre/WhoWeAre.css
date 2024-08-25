@@ -1,0 +1,188 @@
+.title__who__we_are {
+  color: white;
+  font-size: 18px;
+  font-family: "Onest Variable", sans-serif;
+  padding: 200px 0 0 100px;
+  background-image: radial-gradient(
+      rgba(71, 74, 255, 0.27) 1px,
+      transparent 1px
+    ),
+    radial-gradient(rgba(71, 74, 255, 0.27) 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  background-color: #05040c;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: showSmooth;
+  animation-range: entry 25% cover 30%;
+  animation: showSmooth 0.6s ease-out both 0.2s ;
+  animation-fill-mode: both;
+
+}
+.container__who__we__are {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background-image: radial-gradient(
+      rgba(71, 74, 255, 0.27) 1px,
+      transparent 1px
+    ),
+    radial-gradient(rgba(71, 74, 255, 0.27) 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  background-color: #05040c;
+}
+.section__who__we__are {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 100px;
+  position: sticky;
+  top: 80px;
+}
+.section__who__we__are > div {
+  width: 50%;
+  height: 350px;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  max-width: 600px;
+  /* view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: showSmooth;
+  animation-range: entry 25% cover 30%;
+  animation: showSmooth 0.6s ease-out both 0.2s ;
+  animation-fill-mode: both; */
+}
+.description__who__we__are {
+  color: #fafafa;
+  font-family: "Onest Variable", sans-serif;
+  line-height: 40px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#05040c48, #05040c 50%, #05040c3b);
+  justify-content: center;
+  padding: 50px;
+}
+.img__who__we__are {
+  border-radius: 10px;
+  padding: 5px;
+  background: #474affab;
+  background: -webkit-linear-gradient(41deg, #474affab 0%, #bc48ffb2 100%);
+  background: linear-gradient(41deg, #474affab 0%, #bc48ffb2 100%);
+}
+
+.img__who__we__are > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 3px solid rgba(195, 204, 215, 0.613);
+}
+
+
+@keyframes showSmooth {
+  from {
+    opacity: 0;
+    transform:translateY(60px);
+
+   }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (width < 1024px) {
+  .title__who__we_are {
+    padding: 100px 0 0 70px;
+  }
+  .section__who__we__are {
+    padding: 70px;
+  }
+  .description__who__we__are {
+    padding: 0;
+  }
+}
+@media (width < 768px) {
+  .title__who__we_are {
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .section__who__we__are {
+    flex-direction: column;
+    position: static;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .section__who__we__are > div {
+    width: 100%;
+  }
+  .description__who__we__are {
+    padding: 10px 0;
+    height: auto !important;
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+}
+@media (width < 480px) {
+  .title__who__we_are {
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-image: radial-gradient(
+        rgba(71, 236, 255, 0.27) 1px,
+        transparent 1px
+      ),
+      radial-gradient(rgba(71, 236, 255, 0.27) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-color: #05040c;
+  }
+  .section__who__we__are {
+    flex-direction: column;
+    position: static;
+    padding: 20px;
+    margin-bottom: 30px;
+    gap: 10px;
+    background-image: radial-gradient(
+        rgba(71, 236, 255, 0.27) 1px,
+        transparent 1px
+      ),
+      radial-gradient(rgba(71, 236, 255, 0.27) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-color: #05040c;
+  }
+  .section__who__we__are > div {
+    width: 100%;
+  }
+  .description__who__we__are {
+    padding: 10px 0;
+    height: auto !important;
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+}
+@media (width < 365px) {
+  .title__who__we_are {
+    padding: 5px;
+    padding-top: 40px;
+  }
+  .section__who__we__are {
+    flex-direction: column;
+    position: static;
+    padding: 5px;
+    margin-bottom: 30px;
+  }
+}

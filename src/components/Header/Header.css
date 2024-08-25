@@ -84,7 +84,7 @@
 @media (width < 768px) {
   .header {
     padding: 20px;
-    
+    overflow: visible;
   }
   .header__section__logo {
     width: 70px;
@@ -118,20 +118,16 @@
     position: relative;
     transition: transform 0.3s ease;
   }
-  .mobile-btn-active{
+  .mobile-btn-active {
     border-top: 0;
   }
   .mobile-btn-active::after {
     transform-origin: 90%;
-    transform: rotate(45deg) ;
-
+    transform: rotate(45deg);
   }
   .mobile-btn-active::before {
     transform-origin: 40%;
-    transform:translate(4px, 1px) rotate(-45deg);
-  }
-  .header{
-    overflow: visible;
+    transform: translate(4px, 1px) rotate(-45deg);
   }
   .nav__active {
     display: flex;
